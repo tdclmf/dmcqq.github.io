@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devil May Cry Wiki</title>
+    <link rel="stylesheet" href="./data/fonts/fonts.css">
+    <link rel="stylesheet" href="./data/css/site.css">
+    <style>
+        body {
+            margin: 0;
+            height: 300%;
+            font-family: sans-serif;
+            background-color: black;
+            overflow-x: hidden;
+        }
+        footer {
+  background-image: url(./data/img/footer.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 300%;
+  font-size: 30px;
+}
+
+footer a {
+  font-family: "DMC5Font (Cyr by Rafa Deymos)", sans-serif;
+  color: #54e2e5;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+       .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .feedback-form {
+            background-image: url(./data/img/BG.png);
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .feedback-form button {
+            padding: 10px;
+            border: none;
+            background-color: #54e2e5;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .feedback-form button:hover {
+            background-color: #3ba8b8;
+        }
+        .feedback-form input,
+        .feedback-form textarea {
+            width: 80%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-image: url(./data/img/header.png); background-repeat: no-repeat; background-size: 100% 100%; height: 10%; width:100%; display: flex; align-items: center;font-size: 30px;">
+        <img src="./data/img/logo.png" alt="Логотип" style="padding: 1%; padding-left: 3%; width: 13vh; height: 7vh">
+        <nav class="sidebar nav-container">
+            <a href="#Главная" class="underline-one nav-link">Главная</a>
+            <a href="#characters" class="underline-one nav-link">Персонажи</a>
+            <a href="#Предыстория" class="underline-one nav-link">Предыстория</a>
+        </nav>
+    </header>
+<main>
+<section style="height: 100%; width:100%; position: absolute; background-image: url(./data/img/dante_loadscreen.png); background-size: 100% 100%; display: flex; background-repeat: no-repeat; background-size: cover; box-shadow: 0px 16px 8px 0px rgba(0, 0, 0, 0.42) inset;">
+<article id="about" class="article" style="padding-top: 5%; padding-left: 3%; font-size: 25px; margin-bottom: 20%;">
+    <h1 style="color: #9de6ec; font-family: 'DMC5Font (Cyr by Rafa Deymos)'; margin-left: 5%">Devil May Cry 5</h1>
+    <span  style="color: #adbece; margin-left: 5%" class="a">Devil May Cry 5 — пятая часть основной серии Devil May Cry. Игра была анонсирована на выставке E3 2018 года. Разработчиком и издателем игры выступает японская компания Capcom.
+        Действие происходит после событий Devil May Cry 4, игра сосредоточена на Неро, когда он отбивается от широко распространенного вторжения демонов,
+        все время разыскивая замаскированного незнакомца, который отсек его правую руку, до возвращения Данте из мира демонов. Игра вышла 8 марта 2019 года.</span>
+    <span style="color: #adbece; margin-left: 5%" class="b">Devil May Cry 5 — пятая часть основной серии Devil May Cry. Действие происходит после событий Devil May Cry 4, игра сосредоточена на Неро, когда он отбивается от широко распространенного вторжения демонов,
+        все время разыскивая замаскированного незнакомца.</span>
+</article>
+</section>
+
+<section id="characters" style="background-image: url(./data/img/v_loadscreen.png); position: absolute; background-repeat: no-repeat; display: flex; background-size: cover; width: 100%; top: 100%; padding-left: 3%; font-size: 25px; margin-bottom: 20%; margin-top: 0px; height: 100vh;">
+    <article>
+        <h1 style="color: #9de6ec; margin-top: 5%; font-weight: 700; margin-left: 5%">Выберите персонажа</h1>
+        <h2 style="color: #adbece; margin-left: 5%" id="char">V</h2>
+    <p class="sec-text" style="color: #adbece; width: 35%; word-wrap: break-word;" id="desc">Таинственный молодой человек, который, то ли шутя, то ли всерьез, говорит, ему отроду всего два дня. Фактически возник на пороге все опытных охотников на демонов, предложив им работу по спасению некоего города от демонического нашествия, но, на самом деле, похоже он единственный, кто знал об истинной угрозе, таившейся там – Уризене. Несмотря на отсутствие боевых навыков, достаточно силен в бою, так как способен призывать к себе на помощь различных фамильяров и управлять ими: в ближнем бою ему помогает Тень, принимающая облик пантеры, на расстоянии спасает Грифон, поливающий врагов молниями, а в крайних случаях приходит Кошмар – огромный голем, подчиняющийся юноше.</p>
+    <div class="slider"> 
+        <div class="slides"> 
+            <input type="radio" name="r" id="r1" checked> 
+            <input type="radio" name="r" id="r2"> 
+            <input type="radio" name="r" id="r3">
+            <input type="radio" name="r" id="r4"> 
+    
+            <div class="slide s1"> 
+                <a href="V.html"><img src="./data/img/V.png" alt="Персонаж V" class="img"></a>
+            </div> 
+    
+            <div class="slide"> 
+                <a href="Dante.html"><img src="./data/img/Dante.jpg" alt="Персонаж Данте" class="img"></a>
+            </div> 
+    
+            <div class="slide"> 
+               <a href="Nero.html"><img src="./data/img/Nero.jpg" alt="Персонаж Неро" class="img"></a> 
+            </div> 
+    
+            <div class="slide"> 
+                <a href="Vergil.html"><img src="./data/img/Vergil.jpg" alt="Персонаж Вергилий" class="img"></a>
+            </div> 
+        </div> 
+    
+        <div class="navigation">
+            <label for="r1" class="bar"></label> 
+            <label for="r2" class="bar"></label> 
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+        </div> 
+    </div> 
+    </article>
+</section>
+<section>
+    <article id="Предыстория" style="box-shadow: 0px -12px 8px 0px rgba(34, 60, 80, 0.2) inset; background-image: url(./data/img/vergil_loadscreen.png); position: absolute; background-repeat: no-repeat; display: flex; background-size: cover; width: 100%; top: 200%; padding-left: 3%; font-size: 25px; margin-bottom: 20%; margin-top: 0px; height: 100%;">
+        <h1 style="color: #9de6ec; margin-top: 5%; font-size: 50px; padding-left: 5vh; font-weight: 700;">Предыстория</h1>
+        <video width="640" height="360" controls autoplay muted loop>
+            <source src="./data/history.mp4" type="video/mp4">
+        </video>
+    </article>
+</section>
+<footer>
+    <a href="javascript:void(0);" class="underline-one nav-link" id="open-feedback">Форма обратной связи</a>
+
+</footer>
+<div class="overlay" id="overlay">
+    <div class="feedback-form">
+        <h3 style=" font-size: 30px; color: rgb(33, 180, 188); width: 50%; margin: 0 auto; margin-bottom: 5%; text-align: center; font-family: 'DMC5Font (Cyr by Rafa Deymos)'; -webkit-text-stroke-color: black; -webkit-text-stroke-width: 0.5px;">Обратная связь</h3>
+        <input type="text" placeholder="Ваше имя" id="name">
+        <textarea placeholder="Ваше сообщение" id="message" rows="5"></textarea>
+        <button id="submit-feedback">Отправить</button>
+        <button id="close-feedback">Закрыть</button>
+    </div>
+</div>
+</main>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+            const radios = document.querySelectorAll('input[name="r"]');
+            const slides = document.querySelectorAll('.slide');
+            const slideTitle = document.getElementById('char');
+            const slideText = document.getElementById('desc');
+
+            const texts = [
+                { title: "V", text: "Таинственный молодой человек, который, то ли шутя, то ли всерьез, говорит, ему отроду всего два дня. Фактически возник на пороге все опытных охотников на демонов, предложив им работу по спасению некоего города от демонического нашествия." },
+                { title: "Данте", text: "Данте - легендарный охотник на демонов. Сын великого Спарды. Легкомысленный, даже несмотря на свой возраст, полу-человек полу-демон, обладающий огромным арсеналом, как холодного, так и огнестрельного оружия. Отправляется на задание по убийству опаснейшего демона - Уризена." },
+                { title: "Неро", text: "В Devil May Cry 5 Неро предстает более опытным охотником на демонов — руководителем и основным бойцом мобильного подразделения Devil May Cry. Он старается остановить нашествие демонов, не прекращая погони за таинственным незнакомцем, похитившим его демоническую руку."},
+                { title: "Вергилий", text: "Старший брат-близнец Данте, который всю жизнь гнался за силой вновь вернётся к нам. Куда же привёл его жизненный путь?.."}
+            ];
+
+            function updateSlideContent(index) {
+        slideTitle.textContent = texts[index].title;  
+        slideText.textContent = texts[index].text;  
+    }  
+
+    function nextSlide() {  
+        let currentIndex = Array.from(radios).findIndex(radio => radio.checked);  
+        let nextIndex = (currentIndex + 1) % slides.length;  
+
+        radios[nextIndex].checked = true; 
+        updateSlideContent(nextIndex);
+    }  
+
+    radios.forEach((radio, index) => {
+        radio.addEventListener('change', () => {
+            updateSlideContent(index);
+        });
+    });
+
+    updateSlideContent(0);  
+    setInterval(nextSlide, 3000);
+});
+
+       document.getElementById('open-feedback').addEventListener('click', function() {
+            document.getElementById('overlay').style.display = 'flex';
+        });
+
+        document.getElementById('close-feedback').addEventListener('click', function() {
+            document.getElementById('overlay').style.display = 'none';
+        });
+
+        document.getElementById('submit-feedback').addEventListener('click', function() {
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+            if (name && message) {
+                document.getElementById('name').value = "";
+                document.getElementById('message').value = "";
+                alert('Спасибо за ваше сообщение!');
+                document.getElementById('overlay').style.display = 'none';
+            } else {
+                alert('Пожалуйста, заполните все поля!');
+            }
+        });  
+</script>
+</body>
+</html>
